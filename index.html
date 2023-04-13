@@ -17,7 +17,12 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+
+    <!--MDL theme-->
+     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-red.min.css" /> 
+
+    <!--Padding-->
+    <main style="padding-left: 20px; padding-right: 20px;">
 
     <!--Title-->
     <title>Guess My Number, with JavaScript</title>
@@ -33,17 +38,18 @@
 
     <!--Image-->
     <center>
-    <img src="./images/randomNumbers.png" alt="Numbers" width="500" length="500">
+    <img src="./images/randomNumbers.png" alt="Variety of Numbers image" width="500" length="500">
     </center>
     <br>
     <br>
 
     <!--Form for user input-->
     <form action="javascript:guessSent()">
-      <label for="guess">Input any number between the numbers 1 and 6:</label>
+      <label for="guess">Enter any whole number between the numbers 1 and 6:</label>
       <input type="number" step="1" id="user-guess" min="1" max="6" placeholder="Guess"><br><br>
-      <input type="submit" value="Check" button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+      <input type="submit" value="Generate" button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
     </form>
+    <br>
 
     <!--Div for results-->
     <div id="results"></div>
