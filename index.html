@@ -1,1 +1,51 @@
 <!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+
+    <!--Meta data-->
+    <meta charset="utf-8">
+    <meta name="description" content="Guess My Number Webpage">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Lily C">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="./fav_index/site.webmanifest">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+
+    <!--Title-->
+    <title>Guess My Number, with JavaScript</title>
+  </head>
+  <body>
+
+    <!--Link to JavaScript file-->
+    <script src="./js/script.js"></script>
+    <h1>Guess My Number!</h1>
+
+    <!--Text-->
+    <p>This webpage will allow you to guess a random number. Your goal is to try and guess correctly! To input your guess enter your input texbox below.</p>
+
+    <!--Image-->
+    <center>
+    <img src="./images/randomNumbers.png" alt="Numbers" width="500" length="500">
+    </center>
+    <br>
+    <br>
+
+    <!--Form for user input-->
+    <form action="javascript:guessSent()">
+      <label for="guess">Input any number between the numbers 1 and 6:</label>
+      <input type="number" step="1" id="user-guess" min="1" max="6" placeholder="Guess"><br><br>
+      <input type="submit" value="Check" button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+    </form>
+
+    <!--Div for results-->
+    <div id="results"></div>
+  </body>
+</html>
